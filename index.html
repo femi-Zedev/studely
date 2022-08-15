@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studely</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="grid grid-cols-12 w-full h-full">
+    <aside class="col-span-2 bg-[#282525] pt-5 h-full">
+      <div class="w-52 bg-gray-400 h-4 rounded-lg ml-6"></div>
+      <div class="pt-9 flex flex-col items-center">
+        <img src="./assets/no-img.png" class="rounded-full w-32 h-32">
+        <h3 class="text-[17px] font-bold mt-4">John Doe</h3>
+        <p class="text-[#A700D0] text-sm mt-2">Admin</p>
+      </div>
+      <nav class="relative mt-9 w-full px-9">
+        <div class="w-full pl-10 py-3 my-2 rounded flex items-center">
+          <span class="w-4 h-4 border-[1px] border-white rounded"></span>
+          <p class="text-sm ml-3 font-medium">Home</p>
+        </div>
+        <div class="w-full pl-10 py-3 my-2 rounded flex items-center">
+          <span class="w-4 h-4 border-[1px] border-white rounded"></span>
+          <p class="text-sm ml-3 font-medium">Course</p>
+        </div>
+        <div class="w-full pl-10 py-3 my-2 rounded flex items-center bg-[#A700D0]">
+          <span class="w-4 h-4 border-[1px] border-white rounded"></span>
+          <p class="text-sm ml-3 font-medium">Students</p>
+        </div>
+        <div class="w-full pl-10 py-3 my-2 rounded flex items-center">
+          <span class="w-4 h-4 border-[1px] border-white rounded"></span>
+          <p class="text-sm ml-3 font-medium">Payment</p>
+        </div>
+        <div class="w-full pl-10 py-3 my-2 rounded flex items-center">
+          <span class="w-4 h-4 border-[1px] border-white rounded"></span>
+          <p class="text-sm ml-3 font-medium">Report</p>
+        </div>
+        <div class="w-full pl-10 py-3 my-2 rounded flex items-center">
+          <span class="w-4 h-4 border-[1px] border-white rounded"></span>
+          <p class="text-sm ml-3 font-medium">Settings</p>
+        </div>
+
+        <div class="bottom-[4px] w-full pl-10 py-3 my-2 rounded flex items-center fixed">
+          <p class="text-sm font-medium">Logout</p>
+          <span class=" ml-3 w-4 h-4 border-[1px] border-white rounded"></span>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="col-span-10 bg-[#F3F2F2] w-full h-full overflow-y-hidden">
+      <nav class="px-7 bg-white w-full h-16 flex justify-between items-center">
+        <span class="w-4 h-4 border-[1px] border-gray-300 rounded"></span>
+        <div class="flex items-center h-full py-3">
+          <span class="w-52 rounded-lg my-2 border-[1px] border-gray-300 h-full"></span>
+          <span class="ml-5 mr-2 w-6 h-6 border-[1px] border-gray-300 rounded"></span>
+        </div>
+      </nav>
+      <div class="w-full px-7" style="min-height: calc(100vh - 64px);">
+        <div class="flex justify-between items-center py-3 border-b-[1px] border-gray-300">
+          <h2 class="text-[22px] font-bold text-gray-800">Students List</h2>
+          <div class="flex items-center h-full">
+            <span class="mr-5 w-6 h-6 border-[1px] border-[#A700D0] rounded"></span>
+            <button class="w-52 rounded my-2 bg-[#A700D0] h-10 text-sm text-center">ADD NEW STUDENT</button>
+          </div>
+        </div>
+        <div class="text-sm text-gray-800 overflow-y-scroll h-full">
+          <div class="grid grid-cols-12 text-gray-400 my-5">
+            <div class="col-span-1"></div>
+            <div class="col-span-2"> <p class="ml-3">Name</p> </div>
+            <div class="col-span-2">Email</div>
+            <div class="col-span-2"> <p class="ml-3">Phone</p> </div>
+            <div class="col-span-2">Enroll Number</div>
+            <div class="col-span-2">Date of admission</div>
+            <div class="col-span-1"></div>
+          </div>
+          <div class="grid grid-cols-12 items-center bg-white rounded-lg py-5 my-3">
+            <div class="col-span-1"><img src="./assets/avatar.png" class="rounded-lg w-16 h-14 ml-4"></div>
+            <div class="col-span-2"> <p class="ml-3">John Doe</p></div>
+            <div class="col-span-2">johndoe@exemple.com</div>
+            <div class="col-span-2"> <p class="ml-3">987654321</p> </div>
+            <div class="col-span-2">1234567305477760</div>
+            <div class="col-span-2">08-Dec, 2021</div>
+            <div class="col-span-1"> 
+              <div class="flex ml-auto">
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 items-center bg-white rounded-lg py-5 my-3">
+            <div class="col-span-1"><img src="./assets/avatar.png" class="rounded-lg w-16 h-14 ml-4"></div>
+            <div class="col-span-2"> <p class="ml-3">John Doe</p></div>
+            <div class="col-span-2">johndoe@exemple.com</div>
+            <div class="col-span-2"> <p class="ml-3">987654321</p> </div>
+            <div class="col-span-2">1234567305477760</div>
+            <div class="col-span-2">08-Dec, 2021</div>
+            <div class="col-span-1"> 
+              <div class="flex ml-auto">
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 items-center bg-white rounded-lg py-5 my-3">
+            <div class="col-span-1"><img src="./assets/avatar.png" class="rounded-lg w-16 h-14 ml-4"></div>
+            <div class="col-span-2"> <p class="ml-3">John Doe</p></div>
+            <div class="col-span-2">johndoe@exemple.com</div>
+            <div class="col-span-2"> <p class="ml-3">987654321</p> </div>
+            <div class="col-span-2">1234567305477760</div>
+            <div class="col-span-2">08-Dec, 2021</div>
+            <div class="col-span-1"> 
+              <div class="flex ml-auto">
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 items-center bg-white rounded-lg py-5 my-3">
+            <div class="col-span-1"><img src="./assets/avatar.png" class="rounded-lg w-16 h-14 ml-4"></div>
+            <div class="col-span-2"> <p class="ml-3">John Doe</p></div>
+            <div class="col-span-2">johndoe@exemple.com</div>
+            <div class="col-span-2"> <p class="ml-3">987654321</p> </div>
+            <div class="col-span-2">1234567305477760</div>
+            <div class="col-span-2">08-Dec, 2021</div>
+            <div class="col-span-1"> 
+              <div class="flex ml-auto">
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 items-center bg-white rounded-lg py-5 my-3">
+            <div class="col-span-1"><img src="./assets/avatar.png" class="rounded-lg w-16 h-14 ml-4"></div>
+            <div class="col-span-2"> <p class="ml-3">John Doe</p></div>
+            <div class="col-span-2">johndoe@exemple.com</div>
+            <div class="col-span-2"> <p class="ml-3">987654321</p> </div>
+            <div class="col-span-2">1234567305477760</div>
+            <div class="col-span-2">08-Dec, 2021</div>
+            <div class="col-span-1"> 
+              <div class="flex ml-auto">
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+                <span class="w-4 h-4 mx-3 border-[1px] border-[#A700D0] rounded"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
